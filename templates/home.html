@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block body %}
+<div>
+
+
+    <h1> input </h1>
+    <form action = "/" method="POST">
+        <label for="city"> city: </label><br>
+        <input type = "text" name = "city"><br>
+        
+        <label for="state"> state: </label><br>
+        <input type = "text" name = "state"><br>
+        <br>
+        <input type="submit">
+        <p>Result: {{distance}}</p>
+    </form>
+
+
+</div>
+
+{% endblock %}
